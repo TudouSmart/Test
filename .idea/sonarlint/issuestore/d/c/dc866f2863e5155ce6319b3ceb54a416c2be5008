@@ -1,0 +1,10 @@
+
+asquid:UselessImportCheck"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª
+Msquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(’è€Ûþÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(•—æØûÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ê•ˆÈ
+Ysquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ

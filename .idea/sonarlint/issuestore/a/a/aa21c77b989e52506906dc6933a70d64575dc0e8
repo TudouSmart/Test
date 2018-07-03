@@ -1,0 +1,5 @@
+
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚¢Àâýÿÿÿÿ8Í¾Èà÷+
+csquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¬†“»
+Fsquid:S00108")Either remove or fill this block of code.(™é·Ç8¾Òàë÷+
+nsquid:UselessImportCheck"@Remove this unused import 'java.lang.reflect.ParameterizedType'.(ÎÏ˜™ÿÿÿÿÿ8ÊÞ†á÷+

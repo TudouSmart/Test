@@ -1,0 +1,7 @@
+
+;squid:S2676"Use the original value instead.(ğ½›¨8®‚ÊŞŠ,
+qsquid:S00116"TRename this field "THRESHOLD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒí8®‚ÊŞŠ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(‰Áëøÿÿÿÿ8®‚ÊŞŠ,
+Hsquid:S1948"'Make "array" transient or serializable.(áÆ—êşÿÿÿÿ8®‚ÊŞŠ,
+Gsquid:S1948"&Make "pool" transient or serializable.(³ó×øÿÿÿÿ8®‚ÊŞŠ,

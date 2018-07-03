@@ -1,0 +1,11 @@
+
+Esquid:S1481"+Remove this unused "mapper" local variable.(ĞÏáúÿÿÿÿ
+Rsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+ %squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ
+bsquid:UselessImportCheck";Remove this unused import 'com.alibaba.fastjson.JSONArray'.(ÿÀâ³ùÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(°“‘Ãúÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´‘Æ©ÿÿÿÿÿ
+Tsquid:S1854":Remove this useless assignment to local variable "mapper".(ĞÏáúÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ°ÓÁÿÿÿÿÿ
+Rsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ

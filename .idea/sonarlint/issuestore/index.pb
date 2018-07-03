@@ -1,0 +1,27 @@
+
+R
+"src/main/java/com/demo/a/Main.java,4/4/44cccec795ea0105a0698439fc7ff2c660d8bfb6
+]
+-src/main/java/com/demo/testpackage/test1.java,a/a/aa21c77b989e52506906dc6933a70d64575dc0e8
+Y
+)src/main/java/com/demo/QuickSortTask.java,e/c/ec944b16a0087dfe088fa5740ba9d1ef9ba4662f
+R
+"src/main/java/zookeeper/Begin.java,d/6/d66f93c0fa82ffa5ee150d944635acc774a0dd93
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+W
+'src/main/java/com/demo/JacksonTest.java,1/4/148f7f2f139304181693497c8e485878131d193e
+Z
+*src/main/java/com/demo/PermissionDemo.java,f/9/f9687679af557707a46b65f155242bf1201acd7c
+T
+$src/main/java/com/demo/TimeDemo.java,d/c/dc866f2863e5155ce6319b3ceb54a416c2be5008
+O
+src/main/java/RunnableTest.java,1/2/124670f3ae6202e276a5f512f084c5b0c7ecc637
+P
+ src/main/java/vert/x/object.java,2/3/23692fb9b90075ed493612a0cf186a98e61807f9
+]
+-src/test/java/vert/x/firt/MyVerticleTest.java,1/b/1b6d25a93c0dfeceb585d5560488675f59d2634f
+\
+,src/main/java/vert/x/first/MainVerticle.java,b/7/b70acf366c37835718eb4f735159bed5ce74ed83
+Z
+*src/main/java/vert/x/first/HelloWorld.java,b/f/bf68bfd41731779a683663aa01ec24da3b245016
