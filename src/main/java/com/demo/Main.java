@@ -24,49 +24,22 @@ import java.util.concurrent.locks.ReentrantLock;
  * Created by hugang on 2017/6/27.
  */
 public class Main {
-    public static void main1(String[] args) {
-        Path in = Paths.get("/Users/hugang/Documents/in");
-        Path out = Paths.get("/Users/hugang/Documents/out");
-        Set<Integer> sets = new HashSet();
-        try {
-            List<String> ss = Files.readAllLines(in);
-            BufferedWriter writer = Files.newBufferedWriter(out);
-
-            for (String s : ss) {
-                Integer n = Integer.valueOf(s.split(",")[0].trim());
-                if (!sets.contains(n)) {
-                    sets.add(n);
-                    System.out.println(s);
-                }
-            }
-        } catch (IOException e) {
-            System.out.println("wrong!"+e.getMessage());
-            e.printStackTrace();
-        }
-    }
 
     public static void main(String[] args) {
-        Path in = Paths.get("/Users/hugang/Desktop/shop_pos");
-        Path in2 = Paths.get("/Users/hugang/Desktop/pos_sn");
-        try {
-            List<String> shopPos = Files.readAllLines(in);
-            List<String> posSn = Files.readAllLines(in2);
-            List<String> result = new ArrayList<>(shopPos.size());
-            Map<String, String> map = new HashMap<>();
 
-            for (String str:posSn) {
-                String[] ss = str.split(",");
-                map.put(ss[0], ss[1]);
-            }
-
-            for (String str:shopPos) {
-                String[] ss = str.split(",");
-                StringBuilder s = new StringBuilder(ss[0]).append(",");
-                s.append(map.get(ss[1]));
-                System.out.println(s);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        /**
+         * 1111
+         * 1000000
+         * 111111
+         * 10000000
+         */
+        UUID.randomUUID();
+        System.out.println(Long.toBinaryString(0x0f));
+        System.out.println(Long.toBinaryString(0x40));
+        System.out.println(Long.toBinaryString(0x3f));
+        System.out.println(Long.toBinaryString(0x80));
+        System.out.println(Long.toBinaryString(0xff));
+        System.out.println(Long.toBinaryString(0x40));
+        System.out.println(Long.toBinaryString(0x3f));
     }
 }
