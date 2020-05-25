@@ -4,55 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/../zcm-coop-freeway/zcm-coop-freeway-web/src/main/java/com/sankuai/zcm/coop/freeway/thrift/MarketingThriftFacadeImpl.java" description="}" line="44" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b270a77b-a311-46f2-9b7e-6ee6605f2d2b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/camels/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/asm/ClassPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/http/Client1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/FindTargetSumWays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/MinimumTotal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/sort/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/sort/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/sort/InsertSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/util/BankCardClear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/util/CheckFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/util/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/util/RemoveDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/util/RespFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/util/ShopTagClear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/util/ThriftRespFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tudou/netty/demo1/Demo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tudou/netty/demo1/DiscardServerChannelHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tudou/netty/demo1/EchoServerChannelHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tudou/netty/demo1/TimeServerChannelHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tudou/netty/package" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tudou/test/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shells/clear_var.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threads/MultiReactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/timewheel/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/timewheel/TaskNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/timewheel/TimeSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/timewheel/TimeWheel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/file_line_count.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/contract.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RunnableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RunnableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/QuickSortTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/QuickSortTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/leetcode/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/threads/ThreadPoolTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Check.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RunnableTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RunnableTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/QuickSortTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/QuickSortTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/threads/ThreadPoolTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/threads/ThreadPoolTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Check.class" afterDir="false" />
-    </list>
+    <list default="true" id="b270a77b-a311-46f2-9b7e-6ee6605f2d2b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1213,7 +1165,7 @@
       <workItem from="1587378210652" duration="2053000" />
       <workItem from="1589248221573" duration="20714000" />
       <workItem from="1589856956840" duration="12668000" />
-      <workItem from="1590134959028" duration="4462000" />
+      <workItem from="1590134959028" duration="4496000" />
     </task>
     <servers />
   </component>
@@ -1229,7 +1181,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1641191000" />
+    <option name="totallyTimeSpent" value="1641225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1242,7 +1194,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -1265,9 +1216,9 @@
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="leetcode" order="11" sideWeight="0.5019815" side_tool="true" weight="0.23481481" />
       <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32760897" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32692307" />
       <window_info anchor="bottom" id="Run with VisualVM" order="13" weight="0.32893" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44914135" visible="true" weight="0.19481482" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44914135" visible="true" weight="0.19481482" />
       <window_info anchor="bottom" id="JProfiler" order="14" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="6" sideWeight="0.5387931" side_tool="true" weight="0.21681416" />
