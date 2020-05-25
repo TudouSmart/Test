@@ -3,11 +3,12 @@ package util;
 import com.google.common.collect.Lists;
 
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.IOException;
 import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.*;
 
 /**
  * Created by hugang on 2018/4/12.
@@ -15,70 +16,77 @@ import java.util.List;
 public class Check {
 
     public static void main1(String[] args) throws Exception{
-        String path1 = "/Users/hugang/Desktop/file1";
-        String path2 = "/Users/hugang/Desktop/file2";
+        final List<FileCount> list = new ArrayList<>(128);
+        Files.walkFileTree(Paths.get("/Users/hugang/works/scm/zcm-scp/zcm-scp-web"), new SimpleFileVisitor<Path>() {
 
-        List<String> first = Files.readAllLines(Paths.get(path1));
-        List<String> second = Files.readAllLines(Paths.get(path2));
-
-        List<String> notContain = Lists.newArrayList();
-        List<String> notContain2 = Lists.newArrayList();
-
-        int count = 0;
-        for (String s:second) {
-            if (first.contains(s)) {
-                count ++;
-            } else {
-                notContain2.add(s);
+            @Override
+            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                File f = file.toFile();
+                if (f.isDirectory()
+                        || ! f.getName().endsWith(".java")
+                        ||  f.getName().contains("Controller")
+                        ||  f.getName().contains("Thrift")) {
+                    return FileVisitResult.CONTINUE;
+                }
+//                System.out.println(f.getName()+":"+countLine(f.getAbsolutePath()));
+                list.add(new FileCount(f.getName(), countLine(f.getAbsolutePath())));
+                return FileVisitResult.CONTINUE;
             }
-        }
+        });
 
-        for (String s:first) {
-            if (!second.contains(s)) {
-                notContain.add(s);
-            }
-        }
-
-
-
-        if (count == first.size()) {
-            System.out.println("全部包含");
-        } else if (count > 0) {
-            System.out.println("部分包含");
-        }
-
-        System.out.println("count->: "+count);
-
-        System.out.println(notContain);
-        System.out.println(notContain2);
+        list.sort(Comparator.comparing(FileCount::getCount));
+        list.forEach(o -> System.out.println(o.getName()+":"+o.getCount()));
     }
 
-    public static void main(String[] args) throws Exception {
-        String path1 = "/Users/hugang/Desktop/wrong_poi";
-        String path2 = "/Users/hugang/Desktop/open_all";
-        String path3 = "/Users/hugang/Desktop/new_open_all";
-        System.out.println("begin");
 
-        Charset charset = Charset.forName("utf-8");
+    public static int countLine(String path) throws IOException{
+        Process process = Runtime.getRuntime().exec("wc -l " + path);
+        Scanner scanner = new Scanner(process.getInputStream());
+        String res = scanner.nextLine().trim();
+        return Integer.parseInt(res.split(" ")[0]);
+    }
 
-        List<String> path1Lines = Files.readAllLines(Paths.get(path1), charset);
-        List<String> path2Lines = Files.readAllLines(Paths.get(path2), charset);
+    public static class FileCount {
+        private String name;
+        private int count;
 
-        BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get(path3));
-
-        for (String l2:path2Lines) {
-            String[] arr = l2.split(",");
-            String shopId = arr[0].trim();
-
-            if (!path1Lines.contains(shopId)) {
-                bufferedWriter.write(shopId+","+arr[1]+System.getProperty("line.separator"));
-            }
+        public FileCount(String name, int count) {
+            this.name = name;
+            this.count = count;
         }
 
-        bufferedWriter.flush();
-        bufferedWriter.close();
+        public String getName() {
+            return name;
+        }
 
-        System.out.println("end");
+        public FileCount setName(String name) {
+            this.name = name;
+            return this;
+        }
 
+        public int getCount() {
+            return count;
+        }
+
+        public FileCount setCount(int count) {
+            this.count = count;
+            return this;
+        }
+    }
+
+    public static void main(String[] args) {
+        List<Integer> arr = new ArrayList<Integer>(){{
+           add(1);
+           add(2);
+           add(3);
+           add(4);
+           add(5);
+        }};
+
+        Spliterator<Integer> test = Spliterators.spliterator(arr, 0);
+        test.forEachRemaining(System.out::println);
+        System.out.println("-------------------");
+        test.forEachRemaining(System.out::println);
+        new ArrayList<>().stream();
     }
 }

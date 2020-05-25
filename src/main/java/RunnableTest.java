@@ -1,3 +1,11 @@
+import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Lists;
+import com.sankuai.zcm.scm.util.encryption.AESUtil;
+import com.sankuai.zcm.scm.util.encryption.BankEncryptTypeHandler;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.*;
 
 /**
@@ -6,16 +14,14 @@ import java.util.concurrent.*;
 public class RunnableTest {
 
     public static void main(String[] args) throws Exception{
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
-
-        Future<String> future = executorService.submit(() -> {System.out.println("funtest");return "test";});
-        executorService.shutdown();
-        for (;;) {
-            if (future.isDone()) {
-                System.out.println(future.get(100, TimeUnit.MILLISECONDS));
-                System.out.println(future.get(100, TimeUnit.MILLISECONDS));
-                break;
-            }
+        List<String> list = Lists.newArrayList("6236682950006702885","6236682950003761629","6217002950112209448","6227001872920063660","6227001833310006255","6217856400000356619","6228482032444343314","6228482022614512210","6228412030133508614","1502016001206821163","6236681930007452798","6217582000035083773","6228481778668923378","603957002246706316","6217993950003476271","6217993900038963785","6221503910001458296","6227001823770408877","6217001870002328200","6228482038429037177","6228482032107466311","6217001870002599727","6217906400020115219","6221883950007369378","6227523500457960","6230523310013906571","6236681870000424354","6214623221001109768","6214673860000125652","6214868751009977","6217852700021915846","6217997300043047235","6227003850002279220","6227003900020321056","6230520860033768073","6221885540010756535","6221885540013409504","6228480801378694419");
+        Map<String, String> data = new HashMap<>();
+        for (String key : list) {
+            data.put(key, AESUtil.encrypt(key, "bank_account_number"));
         }
+
+        data.forEach((k, v) -> {
+            System.out.println(k+", "+v);
+        });
     }
 }

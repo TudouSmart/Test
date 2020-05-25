@@ -27,7 +27,7 @@ public class QuickSortTask<T extends Comparable> extends RecursiveAction {
         this.THRESHOLD = threShold;
         this.start = start;
         this.end = size;
-        this.pool = new ForkJoinPool();
+        this.pool = ForkJoinPool.commonPool();
     }
 
     public T[] doSort() {
