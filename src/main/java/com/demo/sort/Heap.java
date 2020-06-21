@@ -82,11 +82,6 @@ public class Heap {
     }
 
 
-
-    public static void main(String[] args) {
-        System.out.println(compareVersion("0.1", "1.1"));
-    }
-
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int allLen = nums1.length + nums2.length;
         PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
@@ -111,7 +106,7 @@ public class Heap {
             int maxVal = queue.peek();
             if (maxVal < nums1[index1]) {
                 queue.remove();
-                queue.add(nums1[index1]);`
+                queue.add(nums1[index1]);
             }
         }
 

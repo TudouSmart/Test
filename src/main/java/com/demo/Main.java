@@ -25,21 +25,15 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        Main m = new Main();
+        m.test();
+        m.test();
+    }
 
-        /**
-         * 1111
-         * 1000000
-         * 111111
-         * 10000000
-         */
-        UUID.randomUUID();
-        System.out.println(Long.toBinaryString(0x0f));
-        System.out.println(Long.toBinaryString(0x40));
-        System.out.println(Long.toBinaryString(0x3f));
-        System.out.println(Long.toBinaryString(0x80));
-        System.out.println(Long.toBinaryString(0xff));
-        System.out.println(Long.toBinaryString(0x40));
-        System.out.println(Long.toBinaryString(0x3f));
+    public void test() throws Exception {
+        System.out.println("begin");
+        this.wait();
+        System.out.println("end");
     }
 }
